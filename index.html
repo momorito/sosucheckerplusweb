@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素数チェッカーPlus WEB</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+  </head>
+  <body>
+    <div id = "title">
+      <h1>素数チェッカーPlus WEB</h1>
+      <img id = "sosuplusIcon" src="img/sosuplus.png" alt="sosuplus">
+      <p>素数かどうか調べたい数字を入力してください。</p>
+      <p><small>（桁が多ければ多いほど時間がかかる（固まる）ので、適切な数値の範囲で使ってください）</small></p>
+    </div>
+    <div id="inputForm">
+      <input type="number" name="inputBox" id="inputBox"></input>
+    </div>
+    <div id="buttons">
+      <button type="button" name="button" id="button" onclick="primeCheck()">素数チェック</button>
+      <button type="button" name="button" id="clear" onclick="clearContents()">クリア</button>
+    </div>
+    <div id ="resultArea">
+      <h2>検索結果</h2>
+      <p id="result"></p>
+      <p id="factorization"></p>
+      <p><a id="twitter_button" class="btn">結果をTweet</a></p>
+    </div>
+    <div id="introduction">
+      <h3>Android版（本家）</h3>
+      <a href="https://momorito.github.io/redirect/redirect_scp.html" target="_blank"><img class="google-play-badge" src="img/google-play-badge.png" alt="google-play"></a>
+    </div>
+    
+    <script type="text/javascript" src="scripts/prime.js"></script>
+    <noscript>Javascriptが利用できません</noscript>
+    <footer>
+      <p><small>Copyright © momorito All Rights Reserved.</small></p>
+    </footer>
+  </body>
+
+</html>
